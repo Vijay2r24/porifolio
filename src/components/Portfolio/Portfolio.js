@@ -1413,7 +1413,7 @@ const Portfolio = () => {
       <img src={Sustaine} alt="Client 1" className="w-full h-auto object-contain" />
     </div>
     <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
-      <img src={Geeks} alt="Client 2" className="w-full h-auto object-contain" />
+      <img src={Mantra} alt="Client 2" className="w-full h-auto object-contain" />
     </div>
     <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
       <img src={Focify} alt="Client 3" className="w-full h-auto object-contain" />
@@ -1431,7 +1431,7 @@ const Portfolio = () => {
       <img src={Trgt} alt="Client 7" className="w-full h-auto object-contain" />
     </div>
     <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
-      <img src={Mantra} alt="Client 8" className="w-full h-auto object-contain" />
+      <img src={Geeks} alt="Client 8" className="w-full h-auto object-contain" />
     </div>
   </div>
 </div>
