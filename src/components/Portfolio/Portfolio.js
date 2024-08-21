@@ -1425,7 +1425,13 @@ const Portfolio = () => {
       <img src={Sustaine} alt="Client 5" className="w-full h-auto object-contain" />
     </div>
     <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
-      <img src={Focify} alt="Client 6" className="w-full h-auto object-contain" />
+      <img src={Nexa} alt="Client 6" className="w-full h-auto object-contain" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
+      <img src={Trgt} alt="Client 7" className="w-full h-auto object-contain" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
+      <img src={Mantra} alt="Client 8" className="w-full h-auto object-contain" />
     </div>
   </div>
 </div>
