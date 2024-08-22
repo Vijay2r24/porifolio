@@ -1221,6 +1221,7 @@ import Trgt from '../../assets/images/Frame 1000004005.png';
 import IdeaHub from  '../../assets/images/idea.png';
 import CMS from    '../../assets/images/CMD.png';
 import Nexa from   '../../assets/logo/nexa.jpeg';
+import MCDMFlogo from '../../assets/images/Mcdmf1 (1).png'
 
 
 const Portfolio = () => {
@@ -1286,10 +1287,10 @@ const Portfolio = () => {
   ];
   
 
-  const Box = ({ title, description, icon, bgColor }) => (
+  const Box = ({ title, description, icone, bgColor }) => (
     <div className="box text-white-500" style={{ backgroundColor: bgColor }}>
       <div className="icon-container">
-        <img src={icon} alt={title} className="icon" />
+        <img src={icone} alt={title} className="icone" />
       </div>
       <div className="content">
         <h2>{title}</h2>
@@ -1305,25 +1306,25 @@ const Portfolio = () => {
   return (
     <>
       <Front>
-        <div className="contact-heading">
+        <div className="contactheading">
           <h1>Portfolio</h1>
           <p>
             Welcome to B2Y, where innovation meets connectivity. We are thrilled
             to connect with you and explore how our expertise in IT solutions
             can empower your business.
           </p>
-          <div className="contact-buttons">
-            <button className="arrow-button" onClick={handleButtonClick}>
+          <div className="contactbuttons">
+            <button className="arrowbutton" onClick={handleButtonClick}>
               Portfolio
-              <span className="arrow-icon">
+              <span className="arrowicon">
                 <FaArrowDown />
               </span>
             </button>
           </div>
         </div>
       </Front>
-      <div className="our_services_section">
-  <div className="our_service container mx-auto px-4 py-6" data-aos="fade-up">
+      <div className="ourservices_section">
+  <div className="ourservice container mx-auto px-4 py-6" data-aos="fade-up">
   <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-center mb-6">
   <b style={{ color: '#2e3192' }}>Our</b> 
   <span style={{ color: '#20d3d3', marginLeft: '0.5rem' }}><b>Clients</b></span>
@@ -1350,7 +1351,7 @@ const Portfolio = () => {
             <Box  className="hidden sm:block"
               title="Just Click Service"
               description="Food & Groceries Delivery Services"
-              icon={Loud}
+              icone={Loud}
               bgColor=""
             />
           </SwiperSlide>
@@ -1358,7 +1359,7 @@ const Portfolio = () => {
       <Box
         title="Yadhumadi"
         description="Farmer & Nature Protection NGO"
-        icon={Mantra}
+        icone={Mantra}
         bgColor="box-bg-light-green" // Add custom class for background color if needed
       />
     </SwiperSlide>
@@ -1366,7 +1367,7 @@ const Portfolio = () => {
             <Box
               title="Astrology Offline"
               description="Expert Astrologist Website"
-              icon={Focify}
+              icone={Focify}
               bgColor=""
             />
           </SwiperSlide>
@@ -1374,7 +1375,7 @@ const Portfolio = () => {
             <Box
               title="Astrology Offline"
               description="Expert Astrologist Website"
-              icon={Nexa}
+              icone={Nexa}
               bgColor=""
             />
           </SwiperSlide> 
@@ -1382,7 +1383,7 @@ const Portfolio = () => {
             <Box
               title="New Service"
               description="A new exciting service"
-              icon={Geeks}
+              icone={Geeks}
               bgColor=""
             />
           </SwiperSlide>
@@ -1391,7 +1392,7 @@ const Portfolio = () => {
             <Box
               title="MCDMF"
               description="Expert Astrologist Website"
-              icon={Sustaine}
+              icone={Sustaine}
               bgColor=""
             />
           </SwiperSlide>
@@ -1399,7 +1400,16 @@ const Portfolio = () => {
     <Box
       title="New Service"
       description="A new exciting service"
-      icon={Trgt}
+      icone={Trgt}
+      bgColor=""
+    >
+    </Box>
+</SwiperSlide>
+<SwiperSlide className="swiper-slide-trgt">
+    <Box
+      title="New Service"
+      description="A new exciting service"
+      icone={MCDMFlogo}
       bgColor=""
     >
     </Box>
@@ -1410,7 +1420,7 @@ const Portfolio = () => {
         <div className="container mx-auto p-4 lg:hidden">
   <div className="grid grid-cols-2 sm:grid-cols-3 gap-6" data-aos="fade-up">
     <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
-      <img src={Sustaine} alt="Client 1" className="w-full h-auto object-contain" />
+      <img src={MCDMFlogo} alt="Client 1" className="w-full h-auto object-contain" />
     </div>
     <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
       <img src={Mantra} alt="Client 2" className="w-full h-auto object-contain" />
@@ -1447,7 +1457,7 @@ const Portfolio = () => {
   Our team is currently working on a mobile app redesign aimed at improving user experience. We're using React Native for the frontend and Node.js for the backend. The project is progressing well, with initial wireframes completed and API integration underway.
 </p>
 
-  <div className="storySection flex flex-col-reverse md:flex-row-reverse bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
+  <div className="cardSection flex flex-col-reverse md:flex-row-reverse bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
   <div className="story_img w-full md:w-1/2 h-64 md:h-full">
     <img
       src={Real}
@@ -1486,7 +1496,7 @@ const Portfolio = () => {
     </p>
   </div>
 </div>
-<div className="storySection reverse flex flex-col-reverse md:flex-row bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="100">
+<div className="cardSection reverse flex flex-col-reverse md:flex-row bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="100">
   <div className="storyText w-full md:w-1/2 p-4">
   <h1 className="headding text-2xl font-bold text-white mb-4" data-aos="fade-right">E-Commerce</h1>
     <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -1524,7 +1534,7 @@ const Portfolio = () => {
     />
   </div>
 </div>
-<div className="storySection flex flex-col md:flex-row" data-aos="fade-right" data-aos-delay="100">
+<div className="cardSection flex flex-col md:flex-row" data-aos="fade-right" data-aos-delay="100">
   <div className="story_img w-full md:w-3/4 h-96 md:h-auto">
   <img
     src={MCDMF}
@@ -1564,7 +1574,7 @@ const Portfolio = () => {
     </p>
   </div>
 </div>
-<div className="storySection reverse flex flex-col-reverse md:flex-row bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="100">
+<div className="cardSection reverse flex flex-col-reverse md:flex-row bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="100">
   <div className="storyText w-full md:w-1/2 p-4">
   <h1 className="headding text-2xl font-bold text-white mb-4" data-aos="fade-right">Idea Hub</h1>
     <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -1602,7 +1612,7 @@ const Portfolio = () => {
     />
   </div>
 </div>
-<div className="storySection flex flex-col-reverse md:flex-row-reverse bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
+<div className="cardSection flex flex-col-reverse md:flex-row-reverse bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
 <div className="story_img w-full md:w-1/2 h-64 md:h-full">
   <img
     src={CMS}

@@ -61,7 +61,7 @@ function App() {
             }
           />
           <Route
-            path="/"
+            path="/about"
             element={
               <CSSTransition
                 in={!loading}
@@ -74,7 +74,7 @@ function App() {
             }
           />
           <Route
-            path="/"
+            path="/services"
             element={
               <CSSTransition
                 in={!loading}
@@ -87,7 +87,7 @@ function App() {
             }
           />
           <Route
-            path="/"
+            path="/contact"
             element={
               <CSSTransition
                 in={!loading}

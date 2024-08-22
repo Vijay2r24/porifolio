@@ -20,24 +20,24 @@ import AssureImage from "../assets/images/assure.jpg";
 // menu items
 export const menuItemsList = [
   {
-    // title: "Home",
-    // path: "/",
+     title: "Home",
+     path: "/",
   },
   {
-    // title: "About",
-    // path: "/about",
+     title: "About",
+     path: "/about",
   },
   {
-    // title: "Services",
-    // path: "/services",
+     title: "Services",
+     path: "/services",
   },
   {
     title: "Portfolio",
     path: "/portfolio",
   },
   {
-    // title: "Contact",
-    // path: "/contact",
+     title: "Contact",
+     path: "/contact",
   },
 ];
 // choose us list

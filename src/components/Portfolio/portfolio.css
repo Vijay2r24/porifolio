@@ -1,4 +1,4 @@
-/* .about-heading {
+/* /* .about-heading {
     color: #fff;
     text-align: center;
     display: flex;
@@ -548,11 +548,12 @@
 
 
 
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f4f4f4;
+  background-color: #fff;
   margin: 0;
   height:100%;
   width:100%;
@@ -572,29 +573,46 @@ body {
   align-items: center;
   color: #fff;
 } */
-
-.contact-heading {
+.contactheading {
   text-align: center;
   max-width: 800px;
   margin: auto;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-heading h1 {
+.contactheading h1 {
   font-size: 4rem;
   margin-bottom: 10px;
 }
 
-.contact-heading p {
+.contactheading p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  color: #cacaca;
 }
 
-.contact-buttons {
+.contactbuttons {
   display: flex;
   justify-content: center;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  margin: auto;
 }
 
-.arrow-button {
+.arrowbutton {
   background: #2e3192;
   color: #fff;
   padding: 10px 20px;
@@ -602,32 +620,40 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 8px 0;
 }
 
-.arrow-button:hover {
+.arrowbutton:hover {
   background: #1e2172;
 }
-
-.arrow-icon {
-  margin-left: 10px;
+.arrowbutton:hover .arrowicon {
+  transform: translateY(5px); /* Adjust the distance as needed */
 }
 
-.our_services_section {
+
+.arrowicon {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ourservices_section {
   background-color: #fff;
   padding:10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* .our_service_heading {
   font-size: 3.53rem;
 } */
-.service_heading {
-  font-size: 3.8rem;
-  margin-bottom: 01px;
-  text-align: center;
-}
 /* Custom styles for SwiperSlide */
-.swiper-slide-custom .icon{
+.swiper-slide-custom .icone{
   height:100px;
   border-radius: 10px;
 }
@@ -635,22 +661,12 @@ body {
   width: 10px;  /* Adjust as needed */
   height: 10px; /* Adjust as needed */
 }
-
-.color {
-  color: #2e3192;
-}
-
-.our_service_para {
-  font-size: 2rem;
-  color: #555;
-}
-
 .storyContainer {
   width: 100%;
   background-color: #fff;
 }
 
-.storySection {
+.cardSection {
   display: flex;
   width: 100%;
   gap: 20px;
@@ -682,7 +698,7 @@ img {
   justify-content: center;
   gap: 5px;
 }
-.swiper-slide-Nexa .icon{
+.swiper-slide-Nexa .icone{
   width:130px;
   margin-left:20px;
   height:100px;
@@ -695,43 +711,14 @@ img {
   width: 100%;
   margin-left:500px;
 }
-.our_service_para {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-}
 
-@media (min-width: 640px) {
-  .our_service_para {
-    font-size: 18px;
-    line-height: 1.75;
-    text-align: left;
-    padding: 24px;
-  }
-}
-
-@media (min-width: 768px) {
-  .our_service_para {
-    font-size: 20px;
-    line-height: 1.75;
-    padding: 32px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .our_service_para {
-    font-size: 24px;
-    line-height: 1.5;
-    padding: 40px;
-  }
-}
 
 
 
 
 
 @media screen and (max-width: 1024px) {
-  .storySection {
+  .cardSection {
     flex-direction: column;
   }
 
@@ -746,12 +733,8 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .storySection {
+  .cardSection {
     flex-direction: column;
-  }
-  .our_service_para {
-    font-size: 0.9rem; /* Slightly smaller font size for mobile */
-    padding: 0 0.5rem; /* Reduce padding on mobile */
   }
 
   .storyText {
@@ -765,7 +748,7 @@ img {
 }
 
 @media screen and (max-width: 425px) {
-  .storySection {
+  .cardSection {
     flex-direction: column;
   }
 
@@ -909,7 +892,7 @@ flex-direction: column;
   margin-bottom: 1rem;
   gap:0;
 }
- .icon {
+ .icone {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -941,7 +924,7 @@ flex-direction: column;
     .swiper-slide {
       margin-bottom: 1rem; /* Space between slides */
     }
-  .icon {
+  .icone {
     width: 80%; /* Adjust icon size for smaller screens */
     height: auto; /* Allow icon height to adjust based on its container */
   }
@@ -955,24 +938,13 @@ flex-direction: column;
   }
 }
 /* Assuming you are using Tailwind CSS */
-.service_heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #001f3f; /* Adjust the color to match the theme */
-}
-
-.our_service_para {
-  color: #4a5568;
-  font-size: 1.300rem;
-}
-
-.storySection {
+.cardSection {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
 }
 
-.reverse .storySection {
+.reverse .cardSection {
   flex-direction: row-reverse;
 }
 
@@ -1002,18 +974,7 @@ flex-direction: column;
   padding: 20px;
 }
 
-.service_heading {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.our_service_para {
-  font-size: 1.2rem;
-  text-align: justify;
-}
-
-.storySection {
+.cardSection {
   display: flex;
   align-items: center;
   margin: 20px 0;
@@ -1058,11 +1019,7 @@ flex-direction: column;
     padding: 15px;
   }
 
-  .service_heading {
-    font-size: 2rem;
-  }
-
-  .storySection {
+  .cardSection {
     flex-direction: column;
     text-align: center;
   }
@@ -1085,14 +1042,6 @@ flex-direction: column;
 }
 
 @media (max-width: 768px) {
-  .service_heading {
-    font-size: 1.75rem;
-  }
-
-  .our_service_para {
-    font-size: 1rem;
-  }
-
   .headding {
     font-size: 1.5rem;
   }
@@ -1103,7 +1052,7 @@ flex-direction: column;
 }
 
 @media (max-width: 480px) {
-  .storySection {
+  .Section {
     flex-direction: column;
     align-items: flex-start;
     margin: 10px 0;
@@ -1127,15 +1076,6 @@ flex-direction: column;
     order: 4;
   }
 
-  .service_heading {
-    font-size: 1.5rem;
-  }
-
-  .our_service_para {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-  }
-
   .headding {
     font-size: 1.25rem;
   }
@@ -1144,5 +1084,3 @@ flex-direction: column;
     font-size: 0.8rem;
   }
 }
-
-
